@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fjnu.edu.cn.imageswitcherdemo.MainActivity">
+
+    <fjnu.edu.cn.imageswitcherdemo.MySwitcherView
+        android:id="@+id/switcher_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:text="Hello World!">
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Preview photo"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next photo"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
